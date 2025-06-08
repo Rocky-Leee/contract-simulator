@@ -1,12 +1,10 @@
-import './globals.css'
-export const metadata = {
-  title: '合约模拟器',
-  description: '一个用于杠杆计算的交互工具',
-}
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="zh">
-      <body>{children}</body>
+      <head />
+      <body className="bg-gray-100 text-gray-900">
+        {children}
+      </body>
     </html>
-  )
+  );
 }
